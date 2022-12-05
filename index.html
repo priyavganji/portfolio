@@ -1,60 +1,87 @@
 <!DOCTYPE html>
-	<!-- You do not need to make any changes to this file, but
-	you should still review the tags to make sure that you
-	are familiar with them. -->
+	
 
 <html lang="en">
-<!-- All of the meta data for the page belongs in the header tag -->
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Link to the favicon image -->
+	
 	<link rel="icon" href="images/pg.png">
-	<!-- Link to the reset file -->
+	
 	<link rel="stylesheet" href="css/html5reset.css">
-	<!-- Link to the stylesheet -->
+	
 	<link rel="stylesheet" href="css/style.css">
 	<title>About Me</title>
 </head>
 
-<!-- All of the visible code in the page belongs in the body tag -->
+
 <body>
-	<!-- Header is a sematic tag page that aids readability -->
+	
 	<header>
-		<!-- Nav is a sematic tag page that aids accessibility -->
+		
 		<nav>
 			<div class="skip"><a href="#main">Skip to Main Content</a></div>
 				<ul class="nav_links">
-					<!-- Since I am on the index file I added class = action to the link to index. -->
-					<li class="nav_links" class="active"><a href = "index.html" >About</a></li>
+					
+					<li class="nav_links active"><a href = "index.html" >About</a></li>
 					<li class="nav_links"><a href = "digital.html">Digital</a></li>
-					<li class="nav_links"><a href = "paintings.html">Illustrations</a></li>
+					<li class="nav_links"><a href = "paintings.html">MDaily</a></li>
+					<li class="nav_links"><a href = "photography.html">Photography</a></li>
 				
 				</ul>
 		</nav>
-		<!-- The h1 is a semantic tag that aids accessibility -->
-		<h1>Priya Varshika Ganji</h1>
+		
+		<h1 class="fullview">Priya Ganji</h1>
 	</header>
-
-	<!-- Every page should have a main tag for accessibility -->
+	
 	<main id="main">
-		<p>I am a Junior at the University of Michigan, studying UX design. I love to draw and paint 
-			in my freetime! Some of my favorite hobbies include traveling and spending time with my family.
-		</p>
+		<div class="priya">
+			<h1><i>Priya Ganji</i></h1>
+		</div>
 
-		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
+		<p>Hi, everyone! I am a Junior at the <i>University of Michigan</i>, studying UX design. I love to draw and paint 
+			in my freetime!
+		</p>
 		<p>
 			I am originally from India, and immigrated to the United States back in 2011. I hope to go 
-			into a career in Design, working in NYC. 
+			into a career in Design, and would love to work in NYC. 
 		</p>
 		<p>
-			I would love to use this page to showcase some of my artwork from the past couple years!
+			Here are a few more fun facts about me!
 		</p>
+
+		<section class="container">
+			<div class="card">
+				<div class="card_img img1"></div>
+					<h3>Stressbusters</h3>
+					<p>I love to play with grandparents dog, Brunji. He is a rescue and absoluetly loves peanut butter! I got to meet him for the first time this past September, and I can't wait to meet him again when I visit India next time!</p>	
+			</div>
+			<div class="card">
+				<div class="card_img img2"></div>
+					<h3>Travel</h3>
+					<p>I love to travel and have a huge bucket list of items to visit and experience around the world. When not traveling, I draw and paint!</p>
+					<a href="https://priyaganji.weebly.com/">Link to Drawings</a>	
+			</div>
+			<div class="card">
+				<div class="card_img img3"></div>
+					<h3>Food</h3 >
+					<p>Even though I am a very picky eater, when it comes to sweets, I don't stray away!</p>	
+			</div>
+		</section>
+
 	</main>
 
-	<!-- Footer is a sematic tag page that aids readability -->
 	<footer>
-		<p>Priya Ganji &copy; 2022</p>
+		<p>Priya Ganji &copy;  2022</p>
+
+		<nav>
+			<ul class="nav_links">
+				
+				<li class="nav_links"><a href = "form.html" >Contact Me</a></li>
+
+			</ul>
+		</nav>
 	</footer>
 </body>
 </html>

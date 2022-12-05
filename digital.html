@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Digital Illustrations</title>
+	
 </head>
 <body>
 	<header>
@@ -14,37 +15,92 @@
 		<div class="skip"><a href="#main">Skip to Main Content</a></div>
 			<ul class="nav_links">
 			<li class="nav_links"><a href = "index.html">About</a></li>
-			<li class="nav_links" class="active"><a href = "digital.html">Digital</a></li>
-			<li class="nav_links"><a href = "paintings.html">Illustrations</a></li>
+			<li class="nav_links active"><a href = "digital.html">Digital</a></li>
+			<li class="nav_links"><a href = "paintings.html">MDaily</a></li>
+			<li class="nav_links"><a href = "photography.html">Photography</a></li>
 			</ul>
 		</nav>
 		<h1>Digital Illustrations</h1>
 	</header>
 
 	
-	
 	<main id="#main">
 	<p>These are a few of the digital illustrations I have done in the past.</p>
 
-	<div class="gallery">
-		
-		<img src = "images/brungi.JPG" alt="brunji dog"/>
-		<img src = "images/maggi.JPG" alt="Maggi dog drawing"/>
-		<img src = "images/heart.JPG" alt="heart"/>
-		<img src = "images/honey.JPG" alt = "honey drawing"/>
-		<img src="images/loco.JPG" alt="loco"/>
-		<img src = "images/strawberry.JPG" alt = "strawberry fruit drawing"/>
-		<img src = "images/kiwi.JPG" alt="kiwi"/>
-		<img src="images/cherry.JPG" alt="cherry drawing"/>
-		<img src = "images/apple.JPG" alt="apple drawing"/>
-		
+	<div class="controls">
+		<button type="button" class="control" data-filter="all">All</button>
+		<button type="button" class="control" data-filter=".pets">Pets</button>
+		<button type="button" class="control" data-filter=".fruits">Fruits</button>
+		<button type="button" class="control" data-filter=".misc">Misc.</button>
+		<button type="button" class="control" data-filter="none">None</button>
 	</div>
+	<p>
+		&nbsp;
+	</p>
+
+	<div class="container gallery">
+		<figure class= "mix pets">
+		<img src = "images/brungi.JPG" alt="brunji dog"/>
+		</figure>
+
+		<figure class= "mix pets">
+		<img src = "images/maggi.JPG" alt="Maggi dog drawing"/>
+		</figure>
+
+		<figure class= "mix misc">
+		<img src = "images/heart.JPG" alt="heart"/>
+		</figure>
+
+		<figure class= "mix misc">
+		<img src = "images/honey.JPG" alt = "honey drawing"/>
+		</figure>
+
+		<figure class= "mix misc">
+		<img src="images/loco.JPG" alt="loco"/>
+		</figure>
+
+		<figure class= "mix fruits">
+		<img src = "images/strawberry.JPG" alt = "strawberry fruit drawing"/>
+		</figure>
+
+		<figure class= "mix fruits">
+		<img src = "images/kiwi.JPG" alt="kiwi"/>
+		</figure>
+
+		<figure class= "mix fruits">
+		<img src="images/cherry.JPG" alt="cherry drawing"/>
+		</figure>
+
+		<figure class= "mix fruits">
+		<img src = "images/apple.JPG" alt="apple drawing"/>
+		</figure>
+
+	</div>
+
+	<p>
+		&nbsp;
+	</p>
 
 	</main>
 	<footer>
 		<p>Priya Ganji &copy; 2022</p>
+
+		<nav>
+				<ul class="nav_links">
+					
+					<li class="nav_links"><a href = "form.html" >Contact Me</a></li>
+
+				</ul>
+		</nav>
 	</footer>
 </body>
+	<script src="js/mixitup.min.js"></script>
+
+	<script>
+		var containerEl = document.querySelector('.container');
+
+		var mixer = mixitup(containerEl);
+	</script>
 </html>
 
 

@@ -1,2 +1,2 @@
-# portfolio
-SI339-final project portfolio
+# SI339 - final project
+
